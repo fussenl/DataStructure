@@ -11,6 +11,12 @@ public class MyDictionary<TKey, TValue>
         _values = new List<TValue>();
     }
 
+    public MyDictionary(List<TKey> key, List<TValue> value)
+    {
+        _keys = key;
+        _values = value;
+    }
+
     public void Add(TKey key, TValue value)
     {
         _keys.Add(key);
